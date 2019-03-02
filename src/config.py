@@ -6,7 +6,7 @@ class Config(object):
         self.fps = 30
         self.snake_height = 20
         self.snake_width = 20
-        self.snake_speed = 10
+        self.snake_speed = 5
         self.apple_width = 20
         self.apple_height = 20
         self.white = (255, 255, 255)
