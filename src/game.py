@@ -35,6 +35,7 @@ class Game(object):
                     y_change = -self.config.snake_speed
 
             self.display.fill(self.config.black)
+            self.apple.draw()
             self.mamba.move(x_change, y_change)
             self.mamba.draw()
             pygame.font.init()
