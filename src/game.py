@@ -39,6 +39,9 @@ class Game(object):
             self.mamba.move(x_change, y_change)
             self.mamba.draw()
             pygame.font.init()
+            if self.apple.apple_rect.colliderect(self.mamba.mamba_rect):
+                self.apple.randomize()
+                self.score += 1
             font = pygame.font.SysFont("bitstreamveraserif", 28)
             score_text = f"Score: {self.score}"
             score = font.render(score_text, True, self.config.white)
