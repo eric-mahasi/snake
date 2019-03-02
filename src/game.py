@@ -38,6 +38,7 @@ class Game(object):
             self.apple.draw()
             self.mamba.move(x_change, y_change)
             self.mamba.draw()
+            self.mamba.draw_body()
             pygame.font.init()
             if self.apple.apple_rect.colliderect(self.mamba.mamba_rect):
                 self.apple.randomize()
