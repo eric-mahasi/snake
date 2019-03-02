@@ -11,10 +11,12 @@ class Mamba(object):
         self.y_pos = int(self.config.game_height / 3)
 
     def draw(self):
-        mamba_rect = pygame.Rect(self.x_pos, self.y_pos,
-                                 self.config.snake_width,
-                                 self.config.snake_height)
-        pygame.draw.rect(self.display, self.config.green, mamba_rect)
+        self.mamba_rect = pygame.Rect(self.x_pos, self.y_pos,
+                                      self.config.snake_width,
+                                      self.config.snake_height)
+        drawn_mamba = pygame.draw.rect(self.display, self.config.green,
+                                       self.mamba_rect)
+        return drawn_mamba
 
     def move(self, x_change, y_change):
         self.x_pos += x_change

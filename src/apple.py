@@ -23,7 +23,9 @@ class Apple:
         self.y_pos = random.randint(30, max_y)
 
     def draw(self):
-        apple_rect = pygame.Rect(self.x_pos, self.y_pos,
-                                 self.config.apple_height,
-                                 self.config.apple_width)
-        pygame.draw.rect(self.display, self.config.red, apple_rect)
+        self.apple_rect = pygame.Rect(self.x_pos, self.y_pos,
+                                      self.config.apple_height,
+                                      self.config.apple_width)
+        drawn_apple = pygame.draw.rect(self.display, self.config.red,
+                                       self.apple_rect)
+        return drawn_apple
