@@ -37,5 +37,12 @@ class Game(object):
             self.display.fill(self.config.black)
             self.mamba.move(x_change, y_change)
             self.mamba.draw()
+            pygame.font.init()
+            font = pygame.font.SysFont("bitstreamveraserif", 28)
+            score_text = f"Score: {self.score}"
+            score = font.render(score_text, True, self.config.white)
+            score_rect = pygame.Rect(self.config.game_height - 140,
+                                     self.config.game_width - 30, 100, 100)
+            self.display.blit(score, score_rect)
             pygame.display.update()
             clock.tick(self.config.fps)
