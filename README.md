@@ -23,6 +23,8 @@ To run the game:
 ```
 $ python snake.py
 ```
+The arrow keys on the keyboard are then used to control the snake.
+
 # Contributing
 Please read [HOW_TO_CONTRIBUTE.md](https://github.com/eric-mahasi/snake/blob/master/HOW_TO_CONTRIBUTE.md) for details on submitting pull
 requests.
