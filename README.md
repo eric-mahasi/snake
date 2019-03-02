@@ -17,7 +17,7 @@ Python, click [here](https://www.python.org/downloads/).
 # Usage
 From a terminal, navigate into the project directory. 
 ```
-$ cd snake/snake
+$ cd snake/src
 ```
 To run the game: 
 ```
@@ -30,3 +30,8 @@ requests.
 # License
 This project is licensed under the MIT license - see the [LICENCE.md](https://github.com/eric-mahasi/snake/blob/master/LICENSE.md)
 for details.
+
+# Acknowledgements
+This project was inspired by
+[Jody LeCompte](https://github.com/jodylecompte/)'s amazing tutorial
+which can be found [here](https://medium.com/@jodylecompte/code-your-first-game-in-pygame-5585dfcc6388).
