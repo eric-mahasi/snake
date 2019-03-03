@@ -1,4 +1,7 @@
 class Config(object):
+    """A class that stores all the settings that will be used globally
+    throughout the game."""
+
     def __init__(self):
         self.game_caption = "Snake"
         self.game_height = 800
