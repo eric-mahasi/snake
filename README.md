@@ -2,8 +2,8 @@
 Snake is a common video game where the player maneuvers a line which
 grows in length, with the line itself being a primary obstacle. The
 player controls a square and as it moves forward, it leaves behind a
-trail, resembling a moving snake. The player attempts to eat items byu
-running unto them with the head of the snake. Each item eaten makes the
+trail, resembling a moving snake. The player attempts to eat items by
+running into them with the head of the snake. Each item eaten makes the
 snake longer so controlling it is progressively more difficult.
 
 # Getting Started
