@@ -3,6 +3,8 @@ import sys
 import pygame
 
 from src.config import Config
+from src.apple import Apple
+from src.mamba import Mamba
 
 
 class Game(object):
@@ -25,6 +27,9 @@ class Game(object):
         """
         self.display = display
         self.config = Config()
+        self.apple = Apple(display)
+        self.mamba = Mamba(display)
+        self.score = 0
 
     def loop(self):
         """The main loop of the game."""
